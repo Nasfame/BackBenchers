@@ -54,8 +54,8 @@ function htmlHead()
 {
     echo "
     <html>
-    <head> </head>
-	<title>Back Bencher</title>
+	<title>Back Bencher Discussion Forum</title>
+    <head> <h1 style = color:#228B22> <u> Back Bencher Discussion Forum </u> </h1> </head>
     <body>";
 }
 
@@ -95,10 +95,9 @@ function discussion($sql, $url)
     $query =
         "select u.name as user,d.comments as comment from discussion d join users u on u.id = d.user_id order by d.time asc;";
     $posts = get($sql, $query);
-    htmlHead();
     foreach ($posts as $p) {
         csshead();
-        echo ".comments { //&nbsp;
+        echo ".comments {;
             width: 400px;
             height: 40px;
             margin-left:50px;
@@ -133,7 +132,7 @@ $sql = new mysqli(
     "berY011Sco"
 );
 $url = "discuss.php"; //$_SERVER['PHP_SELF'];
-
+htmlHead();
 if (connecFailed($sql)) {
     echo "Connection Unsuccessful, Refreshing";
     refresh(0.5, $_SERVER['PHP_SELF']);
