@@ -1,0 +1,24 @@
+{
+  "name": "backbenchers",
+  "version": "1.0.0",
+  "description": "PHP TIME",
+  "main": "index.js",
+  "dependencies": {
+    "composer": "^4.1.0",
+    "php": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nasfame/BackBenchers.git"
+  },
+  "author": "Hiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nasfame/BackBenchers/issues"
+  },
+  "homepage": "https://github.com/Nasfame/BackBenchers#readme"
+}
