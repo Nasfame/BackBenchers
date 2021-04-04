@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "94794a12-aa2c-44f8-88ba-62a207a9f10e",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user ",
+							"value": "Hiro",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "comment",
+							"value": "Hello World",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/discuss.php ?user=Hiro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"discuss.php "
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "Hiro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "comment",
+							"value": "Simple",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "Hiro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/discuss.php  ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"discuss.php  "
+					],
+					"query": [
+						{
+							"key": "comment",
+							"value": "MY NAME",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
