@@ -1,5 +1,6 @@
 <?php
 // https://webdamn.com/build-discussion-forum-with-php-and-mysql/
+
 function connecFailed($sql)
 {
     if ($sql->connect_error) 
