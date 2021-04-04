@@ -5,11 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "composer": "^4.1.0",
-    "php": "^1.0.1"
+    "php": ">=8.0"
   },
+  "autoload": {
+        "files": [ "discuss.php" ]
+    },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "Hi Guys"
   },
   "repository": {
     "type": "git",
